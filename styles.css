@@ -548,6 +548,63 @@ h1, h2, h3, .head {
 .crumb { padding: 16px 2px; }
 
 /* =========================================================
+   Caretruck original-style header (logo · contact · social · search + nav)
+   ========================================================= */
+.ct-header { background: #fff; border-bottom: 1px solid var(--line); }
+.ct-top {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 16px 0;
+  flex-wrap: wrap;
+}
+.ct-top .brand { flex: 0 0 auto; }
+.ct-top .brand-logo { height: 74px; width: auto; display: block; }
+.ct-contact { display: flex; flex-direction: column; gap: 9px; font-size: 1.05rem; }
+.ct-contact div { display: flex; align-items: center; gap: 11px; color: var(--ink); }
+.ct-contact a { color: var(--ink); }
+.ct-contact a:hover { color: var(--orange); }
+.ct-contact .ic { width: 20px; height: 20px; color: var(--orange); flex: 0 0 auto; }
+.ct-social { display: flex; gap: 12px; align-items: center; }
+.ct-social a { color: var(--orange); display: grid; place-items: center; }
+.ct-social a:hover { filter: brightness(.82); }
+.ct-social svg { width: 26px; height: 26px; }
+.ct-search { margin-left: auto; display: flex; min-width: 250px; }
+.ct-search input {
+  flex: 1; min-width: 0;
+  border: 1px solid var(--line); border-right: 0;
+  border-radius: 8px 0 0 8px;
+  padding: 13px 18px;
+  font-family: var(--body); font-size: .95rem;
+  background: #f3f3f3; outline: none;
+}
+.ct-search input:focus { background: #fff; border-color: var(--orange); }
+.ct-search button {
+  border: 0; background: var(--orange); color: #fff;
+  padding: 0 20px; border-radius: 0 8px 8px 0; cursor: pointer;
+}
+.ct-search button:hover { background: var(--orange-dark); }
+.ct-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 50px;
+  padding: 14px 0;
+}
+.ct-nav a {
+  font-family: var(--body);
+  font-weight: 700;
+  font-size: 1.12rem;
+  letter-spacing: .3px;
+  color: var(--ink);
+}
+.ct-nav a:hover, .ct-nav a.active { color: var(--orange); }
+@media (max-width: 760px) {
+  .ct-search { margin-left: 0; width: 100%; order: 5; }
+  .ct-top { gap: 16px; }
+  .ct-nav { gap: 10px 26px; }
+}
+
+/* =========================================================
    Home — hero
    ========================================================= */
 .hero {
