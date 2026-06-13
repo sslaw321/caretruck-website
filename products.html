@@ -5,364 +5,256 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Products — Caretruck Auto Sdn Bhd</title>
   <meta name="description" content="Browse genuine and aftermarket truck spare parts — filters, brake chambers, air dryers, clutch discs, suspension and more — from Caretruck Auto Sdn Bhd.">
+  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="assets/logo.jpg" type="image/jpeg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- ============ TOP BAR ============ -->
-  <div class="topbar">
-    <div class="wrap">
-      <div class="tb-left">🚚 “Your Share, We Care” — truck spare parts &amp; filtration, shipping across Malaysia</div>
-      <div class="tb-right">
-        <a href="tel:+60169433638">+6016-943 3638</a>
-        <a href="mailto:kokhong@caretruck.com.my">kokhong@caretruck.com.my</a>
-      </div>
-    </div>
-  </div>
+  <main class="pagewrap">
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="index.html">
-        <img src="assets/logo.jpg" alt="Caretruck Auto — Your Share, We Care" class="brand-logo">
-      </a>
+    <!-- ===== SHARED HEADER / BANNER (identical to homepage) ===== -->
+    <a class="banner-link" href="index.html" aria-label="Caretruck Auto — home">
+      <img src="assets/home/h1-banner.jpg" alt="Caretruck Auto — Specialised in European Truck Spare Parts" width="1161" height="205">
+    </a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="index.html">Home</a>
-        <a href="products.html" class="active">Products</a>
-        <a href="#">Brands</a>
-        <a href="#">News</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
-      <a class="header-cta" href="https://wa.me/60169433638">Get a Quote</a>
-    </div>
-  </header>
-
-  <!-- ============ PAGE BANNER ============ -->
-  <section class="page-banner" aria-label="Caretruck Auto — truck spare parts">
-    <h1 class="sr-only">Our Products</h1>
-  </section>
-  <div class="breadcrumb-bar">
-    <div class="wrap">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
+    <!-- ===== PAGE CONTENT ===== -->
+    <div class="content">
+      <nav class="breadcrumb crumb" aria-label="Breadcrumb">
         <a href="index.html">Home</a><span class="sep">/</span>Products
       </nav>
-    </div>
-  </div>
 
-  <!-- ============ SHOP ============ -->
-  <div class="wrap">
-    <div class="shop">
+      <div class="shop">
 
-      <!-- SIDEBAR -->
-      <aside class="sidebar">
-        <div class="widget">
-          <h3>Search Parts</h3>
-          <form class="search-box" onsubmit="return false;">
-            <input type="text" placeholder="Part name or code…" aria-label="Search parts">
-            <button type="submit" aria-label="Search">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-            </button>
-          </form>
-        </div>
-
-        <div class="widget">
-          <h3>Product Categories</h3>
-          <ul class="cat-list">
-            <li><a href="#" class="active">All Products <span class="count">120</span></a></li>
-            <li><a href="#">Air Bellow Assy <span class="count">8</span></a></li>
-            <li><a href="#">Air Dryer <span class="count">6</span></a></li>
-            <li><a href="#">Brake Chamber <span class="count">11</span></a></li>
-            <li><a href="#">Brake Pad <span class="count">14</span></a></li>
-            <li><a href="#">Clutch Disc <span class="count">9</span></a></li>
-            <li><a href="#">Filters <span class="count">27</span></a></li>
-            <li><a href="#">King Pin Kit <span class="count">7</span></a></li>
-            <li><a href="#">Leveling Valve <span class="count">5</span></a></li>
-            <li><a href="#">Pipe Clamp <span class="count">10</span></a></li>
-            <li><a href="#">Stabilizer Rod <span class="count">8</span></a></li>
-            <li><a href="#">Tie Rod End <span class="count">6</span></a></li>
-            <li><a href="#">Others <span class="count">9</span></a></li>
-          </ul>
-        </div>
-
-        <div class="widget">
-          <h3>Shop by Brand</h3>
-          <div class="brand-filter">
-            <button class="active">All</button>
-            <button>MANN</button>
-            <button>Mercedes</button>
-            <button>FUSO</button>
-            <button>Kongsberg</button>
-            <button>MAHLE</button>
-            <button>SACHS</button>
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+          <div class="widget">
+            <h3>Search Parts</h3>
+            <form class="search-box" onsubmit="return false;">
+              <input type="text" placeholder="Part name or code…" aria-label="Search parts">
+              <button type="submit" aria-label="Search">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+              </button>
+            </form>
           </div>
+
+          <div class="widget">
+            <h3>Product Categories</h3>
+            <ul class="cat-list">
+              <li><a href="#" class="active">All Products <span class="count">120</span></a></li>
+              <li><a href="#">Air Bellow Assy <span class="count">8</span></a></li>
+              <li><a href="#">Air Dryer <span class="count">6</span></a></li>
+              <li><a href="#">Brake Chamber <span class="count">11</span></a></li>
+              <li><a href="#">Brake Pad <span class="count">14</span></a></li>
+              <li><a href="#">Clutch Disc <span class="count">9</span></a></li>
+              <li><a href="#">Filters <span class="count">27</span></a></li>
+              <li><a href="#">King Pin Kit <span class="count">7</span></a></li>
+              <li><a href="#">Leveling Valve <span class="count">5</span></a></li>
+              <li><a href="#">Pipe Clamp <span class="count">10</span></a></li>
+              <li><a href="#">Stabilizer Rod <span class="count">8</span></a></li>
+              <li><a href="#">Tie Rod End <span class="count">6</span></a></li>
+              <li><a href="#">Others <span class="count">9</span></a></li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h3>Shop by Brand</h3>
+            <div class="brand-filter">
+              <button class="active">All</button>
+              <button>MANN</button>
+              <button>Mercedes</button>
+              <button>Fleetguard</button>
+              <button>WIX</button>
+              <button>MAHLE</button>
+              <button>SACHS</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- MAIN -->
+        <div>
+          <div class="shop-toolbar">
+            <span class="count-text">Showing <b>1–9</b> of <b>120</b> products</span>
+            <select aria-label="Sort products">
+              <option>Sort by: Latest</option>
+              <option>Price: Low to High</option>
+              <option>Price: High to Low</option>
+              <option>Name: A–Z</option>
+            </select>
+          </div>
+
+          <div class="product-grid">
+
+            <article class="product-card">
+              <span class="badge">New</span>
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M6 7l-3-1M21 18l-3-1M6 17l-3 1M21 6l-3 1"/><ellipse cx="12" cy="12" rx="5" ry="8"/></svg>
+                <span class="code-chip">C 25 710/3</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">MANN Filter</div>
+                <h3>MANN Filter C 25 710/3 Air Filter Element</h3>
+                <div class="price">RM 220.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>
+                <span class="code-chip">A 111-B 56</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">Mercedes</div>
+                <h3>Mercedes Actros II Oil Filter Insert</h3>
+                <div class="price">RM 610.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
+                <span class="code-chip">IU 1210 X</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">Mercedes</div>
+                <h3>Mercedes Actros II Fuel Filter Cartridge</h3>
+                <div class="price enquire">Price on Enquiry</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="5" ry="9"/><path d="M12 3v18M7 8l10 8M7 16l10-8"/></svg>
+                <span class="code-chip">WF 2076</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">Fleetguard</div>
+                <h3>Coolant Filter WF2076 (Spin-on)</h3>
+                <div class="price enquire">Price on Enquiry</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge">Hot</span>
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="9" width="16" height="6" rx="3"/><path d="M8 9V6M16 9V6M8 15v3M16 15v3"/></svg>
+                <span class="code-chip">AB-4150</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">FUSO</div>
+                <h3>Air Bellow Assembly — Rear Axle</h3>
+                <div class="price">RM 385.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
+                <span class="code-chip">BC-T24/24</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">Kongsberg</div>
+                <h3>Brake Chamber T24/24 Double Diaphragm</h3>
+                <div class="price">RM 295.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="8" rx="1"/><path d="M6 8V6h12v2M7 16v2M17 16v2"/></svg>
+                <span class="code-chip">BP-29202</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">MAHLE</div>
+                <h3>Heavy-Duty Brake Pad Set WVA 29202</h3>
+                <div class="price">RM 168.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.2"/><path d="M12 5v3M12 16v3M5 12h3M16 12h3M7.5 7.5l2 2M14.5 14.5l2 2M16.5 7.5l-2 2M9.5 14.5l-2 2"/></svg>
+                <span class="code-chip">CD-1878</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">SACHS</div>
+                <h3>Clutch Disc 430mm Organic — Actros</h3>
+                <div class="price">RM 640.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <span class="badge soon">Restock</span>
+              <div class="thumb">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h10M14 9l4 3-4 3"/><circle cx="4" cy="12" r="2"/><path d="M18 6v12"/></svg>
+                <span class="code-chip">TRE-5512</span>
+              </div>
+              <div class="product-body">
+                <div class="brand-tag">Genuine</div>
+                <h3>Tie Rod End — Front Steering Linkage</h3>
+                <div class="price">RM 122.00</div>
+                <div class="product-actions">
+                  <button class="btn btn-primary">Add to Quote</button>
+                  <a class="btn btn-ghost" href="#">Details</a>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <nav class="pagination" aria-label="Pagination">
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">…</a>
+            <a href="#" aria-label="Next">›</a>
+          </nav>
         </div>
-      </aside>
 
-      <!-- MAIN -->
-      <main>
-        <div class="shop-toolbar">
-          <span class="count-text">Showing <b>1–9</b> of <b>120</b> products</span>
-          <select aria-label="Sort products">
-            <option>Sort by: Latest</option>
-            <option>Price: Low to High</option>
-            <option>Price: High to Low</option>
-            <option>Name: A–Z</option>
-          </select>
-        </div>
-
-        <div class="product-grid">
-
-          <!-- 1 -->
-          <article class="product-card">
-            <span class="badge">New</span>
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M12 18v4M6 7l-3-1M21 18l-3-1M6 17l-3 1M21 6l-3 1"/><ellipse cx="12" cy="12" rx="5" ry="8"/></svg>
-              <span class="code-chip">C 25 710/3</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">MANN Filter</div>
-              <h3>MANN Filter C 25 710/3 Air Filter Element</h3>
-              <div class="price">RM 220.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 2 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M9 7h6M9 11h6M9 15h6"/></svg>
-              <span class="code-chip">A 111-B 56</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">Mercedes</div>
-              <h3>Mercedes Actros II Oil Filter Insert</h3>
-              <div class="price">RM 510.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 3 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7z"/><path d="M9 12l2 2 4-4"/></svg>
-              <span class="code-chip">IU 1210 X</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">Mercedes</div>
-              <h3>Mercedes Actros II Fuel Filter Cartridge</h3>
-              <div class="price enquire">Price on Enquiry</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 4 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="12" rx="5" ry="9"/><path d="M12 3v18M7 8l10 8M7 16l10-8"/></svg>
-              <span class="code-chip">WF 2076</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">Fleetguard</div>
-              <h3>Coolant Filter WF2076 (Spin-on)</h3>
-              <div class="price enquire">Price on Enquiry</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 5 -->
-          <article class="product-card">
-            <span class="badge">Hot</span>
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="9" width="16" height="6" rx="3"/><path d="M8 9V6M16 9V6M8 15v3M16 15v3"/></svg>
-              <span class="code-chip">AB-4150</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">FUSO</div>
-              <h3>Air Bellow Assembly — Rear Axle</h3>
-              <div class="price">RM 385.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 6 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg>
-              <span class="code-chip">BC-T24/24</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">Kongsberg</div>
-              <h3>Brake Chamber T24/24 Double Diaphragm</h3>
-              <div class="price">RM 295.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 7 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="18" height="8" rx="1"/><path d="M6 8V6h12v2M7 16v2M17 16v2"/></svg>
-              <span class="code-chip">BP-29202</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">MAHLE</div>
-              <h3>Heavy-Duty Brake Pad Set WVA 29202</h3>
-              <div class="price">RM 168.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 8 -->
-          <article class="product-card">
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.2"/><path d="M12 5v3M12 16v3M5 12h3M16 12h3M7 7l2 2M15 15l2 2M17 7l-2 2M9 15l-2 2"/></svg>
-              <span class="code-chip">CD-1878</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">SACHS</div>
-              <h3>Clutch Disc 430mm Organic — Actros</h3>
-              <div class="price">RM 640.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- 9 -->
-          <article class="product-card">
-            <span class="badge soon">Restock</span>
-            <div class="thumb">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12h10M14 9l4 3-4 3"/><circle cx="4" cy="12" r="2"/><path d="M18 6v12"/></svg>
-              <span class="code-chip">TRE-5512</span>
-            </div>
-            <div class="product-body">
-              <div class="brand-tag">Genuine</div>
-              <h3>Tie Rod End — Front Steering Linkage</h3>
-              <div class="price">RM 122.00</div>
-              <div class="product-actions">
-                <button class="btn btn-primary">Add to Quote</button>
-                <a class="btn btn-ghost" href="#">Details</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
-
-        <!-- PAGINATION -->
-        <nav class="pagination" aria-label="Pagination">
-          <a href="#" class="active">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">…</a>
-          <a href="#" aria-label="Next">›</a>
-        </nav>
-      </main>
-
-    </div>
-  </div>
-
-  <!-- ============ BRANDS STRIP ============ -->
-  <section class="brands-strip">
-    <div class="wrap">
-      <div class="label">Our Brands</div>
-      <div class="logos">
-        <span>FUSO</span>
-        <span>KONGSBERG</span>
-        <span>MAHLE</span>
-        <span>SACHS</span>
-        <span>MANN</span>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="wrap footer-grid">
-
-      <div>
-        <h4>Caretruck Auto Sdn Bhd</h4>
-        <p><em>“Your Share, We Care.”</em> Caretruck Auto specializes in a variety of truck spare parts such as air filter, brake chamber, clutch disc, oil filter, leveling valve, pipe clamp, stabilizer rod, and European-truck filtration products.</p>
-        <div class="socials">
-          <a href="https://www.facebook.com/caretruckauto" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-9h3l.5-3.5H13V7.2c0-1 .3-1.7 1.8-1.7H17V2.4C16.6 2.3 15.5 2.2 14.3 2.2c-2.6 0-4.3 1.5-4.3 4.4v2.9H7V13h3v9z"/></svg></a>
-          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="#" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2m0 18a8 8 0 0 1-4-1.1l-.3-.2-2.8.8.8-2.8-.2-.3A8 8 0 1 1 12 20m4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.6 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3"/></svg></a>
-        </div>
-      </div>
-
-      <div class="footer-contact">
-        <h4>Contact Us</h4>
-        <div><a href="tel:+60169433638">+6016-943 3638</a></div>
-        <div><a href="tel:+60330810091">+603-3081 0091</a></div>
-        <div><a href="mailto:kokhong@caretruck.com.my">kokhong@caretruck.com.my</a></div>
-        <div style="margin-top:10px;line-height:1.6;">19, Lorong Permai 1H/KS05,<br>Taman Pandamaran Permai,<br>42000 Port Klang, Selangor, Malaysia</div>
-      </div>
-
-      <div>
-        <h4>Product Categories</h4>
-        <ul class="footer-cats">
-          <li><a href="#">Air Bellow Assy</a></li>
-          <li><a href="#">Air Dryer</a></li>
-          <li><a href="#">Brake Chamber</a></li>
-          <li><a href="#">Brake Pad</a></li>
-          <li><a href="#">Clutch Disc</a></li>
-          <li><a href="#">Filters</a></li>
-          <li><a href="#">King Pin Kit</a></li>
-          <li><a href="#">Leveling Valve</a></li>
-          <li><a href="#">Pipe Clamp</a></li>
-          <li><a href="#">Stabilizer Rod</a></li>
-          <li><a href="#">Tie Rod End</a></li>
-          <li><a href="#">Others</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Get on the List</h4>
-        <p>Sign up for our newsletter to get the latest news, updates and amazing offers delivered directly to your inbox.</p>
-        <form class="newsletter" onsubmit="return false;">
-          <input type="email" placeholder="Your email address" aria-label="Email address">
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-
     </div>
 
-    <div class="footer-bottom">
-      © 2021–2025 <b>Caretruck Auto Sdn Bhd</b> 201601027465 (1198404-K) &nbsp;·&nbsp;
-      <a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms</a>
-    </div>
-  </footer>
+    <!-- ===== SHARED FOOTER (identical to homepage: brands + footer) ===== -->
+    <img src="assets/home/h8-brands.jpg" alt="Our brands: Fleetguard, MANN Filter, WIX" width="1161" height="180">
+    <img src="assets/home/h9-footer.jpg" alt="Caretruck Auto Sdn Bhd — contact, product categories and newsletter" width="1161" height="789">
 
-  <!-- ============ FLOATING BUTTONS ============ -->
+  </main>
+
+  <!-- ===== FLOATING BUTTONS ===== -->
   <a class="fab-wa" href="https://wa.me/60169433638" aria-label="Chat on WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2m0 18a8 8 0 0 1-4-1.1l-.3-.2-2.8.8.8-2.8-.2-.3A8 8 0 1 1 12 20m4.4-6c-.2-.1-1.4-.7-1.6-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.6-1.2.1-.2 0-.3 0-.5l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.8 11.8 0 0 0 4.6 4 5.3 5.3 0 0 0 3.2.6 2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.4-.3"/></svg>
   </a>
@@ -371,24 +263,10 @@
   </button>
 
   <script>
-    // Back-to-top visibility + action
     const fabTop = document.getElementById('fabTop');
     addEventListener('scroll', () => fabTop.classList.toggle('show', scrollY > 400));
     fabTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
 
-    // Mobile nav toggle
-    const nav = document.getElementById('mainNav');
-    document.getElementById('navToggle').addEventListener('click', () => {
-      const open = nav.style.display === 'flex';
-      nav.style.display = open ? 'none' : 'flex';
-      nav.style.flexDirection = 'column';
-      nav.style.position = 'absolute';
-      nav.style.top = '76px'; nav.style.left = '0'; nav.style.right = '0';
-      nav.style.background = '#fff'; nav.style.padding = '14px 6vw';
-      nav.style.boxShadow = '0 10px 20px rgba(0,0,0,.08)';
-    });
-
-    // Brand filter toggle (visual)
     document.querySelectorAll('.brand-filter button').forEach(b =>
       b.addEventListener('click', () => {
         document.querySelectorAll('.brand-filter button').forEach(x => x.classList.remove('active'));

@@ -538,6 +538,16 @@ h1, h2, h3, .head {
 .fab-wa:hover { filter: brightness(1.05); }
 
 /* =========================================================
+   Shared image header / footer (identical across all pages)
+   Reuses the homepage banner + brands + footer section images.
+   ========================================================= */
+.pagewrap { max-width: 1161px; margin: 0 auto; background: #fff; }
+.pagewrap > img, .banner-link > img { display: block; width: 100%; height: auto; }
+.banner-link { display: block; }
+.content { padding: 4px 16px 40px; }
+.crumb { padding: 16px 2px; }
+
+/* =========================================================
    Home — hero
    ========================================================= */
 .hero {
