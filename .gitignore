@@ -1,0 +1,5 @@
+# Local Claude Code settings
+.claude/
+
+# Source screenshots / design references (not for publishing)
+*.png
