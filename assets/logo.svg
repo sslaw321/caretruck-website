@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Caretruck Auto">
+  <defs>
+    <linearGradient id="ct-badge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f9a23a"/>
+      <stop offset="1" stop-color="#e07c0c"/>
+    </linearGradient>
+  </defs>
+  <!-- badge -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="url(#ct-badge)"/>
+  <rect x="2" y="2" width="60" height="29" rx="15" fill="#ffffff" opacity=".10"/>
+  <!-- truck (white) -->
+  <g fill="#ffffff">
+    <rect x="11" y="22" width="23" height="17" rx="2.5"/>
+    <path d="M34 39 V27 h7.3 a3 3 0 0 1 2.3 1.1 L49 34.6 a3 3 0 0 1 .7 1.9 V39 Z"/>
+    <rect x="11" y="39" width="39" height="2.2" rx="1.1"/>
+  </g>
+  <!-- cab window (cut-out) -->
+  <path d="M41.4 29.4 h2.3 l3 4.1 h-5.3 Z" fill="#e07c0c"/>
+  <!-- wheels -->
+  <circle cx="19" cy="42" r="4.3" fill="#ffffff"/>
+  <circle cx="19" cy="42" r="1.7" fill="#e07c0c"/>
+  <circle cx="43" cy="42" r="4.3" fill="#ffffff"/>
+  <circle cx="43" cy="42" r="1.7" fill="#e07c0c"/>
+</svg>

@@ -101,7 +101,7 @@ h1, h2, h3, .head {
   display: grid; place-items: center;
   color: #fff;
 }
-.brand .logo svg { width: 28px; height: 28px; }
+.brand .logo svg { width: 34px; height: 34px; }
 .brand b { font-size: 1.5rem; letter-spacing: 1px; color: var(--ink); line-height: 1; }
 .brand span { display: block; font-family: var(--body); font-size: .64rem; letter-spacing: 2.5px; color: var(--muted); text-transform: uppercase; }
 
