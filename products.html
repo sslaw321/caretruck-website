@@ -13,6 +13,34 @@
 </head>
 <body>
 
+  <!-- ===== SHARED HEADER PANEL (identical to homepage) ===== -->
+  <div class="topbar">
+    <div class="wrap">
+      <div class="tb-left">🚚 “Your Share, We Care” — truck spare parts &amp; filtration, shipping across Malaysia</div>
+      <div class="tb-right">
+        <a href="tel:+60169433638">+6016-943 3638</a>
+        <a href="mailto:kokhong@caretruck.com.my">kokhong@caretruck.com.my</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.jpg" alt="Caretruck Auto — Your Share, We Care" class="brand-logo">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Products</a>
+        <a href="#">Brands</a>
+        <a href="#">News</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a class="header-cta" href="https://wa.me/60169433638">Get a Quote</a>
+    </div>
+  </header>
+
   <main class="pagewrap">
 
     <!-- ===== SHARED HEADER / BANNER (identical to homepage) ===== -->
@@ -266,6 +294,18 @@
     const fabTop = document.getElementById('fabTop');
     addEventListener('scroll', () => fabTop.classList.toggle('show', scrollY > 400));
     fabTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' }));
+
+    const nav = document.getElementById('mainNav');
+    document.getElementById('navToggle').addEventListener('click', () => {
+      const open = nav.style.display === 'flex';
+      nav.style.display = open ? 'none' : 'flex';
+      nav.style.flexDirection = 'column';
+      nav.style.position = 'absolute';
+      nav.style.top = '76px'; nav.style.left = '0'; nav.style.right = '0';
+      nav.style.background = '#fff'; nav.style.padding = '14px 6vw';
+      nav.style.boxShadow = '0 10px 20px rgba(0,0,0,.08)';
+      nav.style.zIndex = '50';
+    });
 
     document.querySelectorAll('.brand-filter button').forEach(b =>
       b.addEventListener('click', () => {
