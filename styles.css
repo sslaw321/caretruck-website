@@ -94,6 +94,8 @@ h1, h2, h3, .head {
   gap: 12px;
   font-family: var(--head);
 }
+.brand-logo { height: 58px; width: auto; display: block; }
+@media (max-width: 560px) { .brand-logo { height: 46px; } }
 .brand .logo {
   width: 46px; height: 46px;
   border-radius: 9px;
