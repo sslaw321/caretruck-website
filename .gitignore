@@ -2,4 +2,9 @@
 .claude/
 
 # Source screenshots / design references (not for publishing)
+# Real site assets belong in assets/ (which is NOT ignored).
 *.png
+*.jpg
+*.jpeg
+*.webp
+!assets/**
