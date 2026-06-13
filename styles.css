@@ -538,19 +538,188 @@ h1, h2, h3, .head {
 .fab-wa:hover { filter: brightness(1.05); }
 
 /* =========================================================
+   Home — hero
+   ========================================================= */
+.hero {
+  background: url("assets/banner.jpg") center / cover no-repeat;
+  aspect-ratio: 1221 / 432;
+  min-height: 200px;
+}
+
+/* =========================================================
+   Home — category grid
+   ========================================================= */
+.section-sub {
+  text-align: center;
+  color: var(--muted);
+  margin: -16px 0 30px;
+  font-size: 1rem;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding-bottom: 56px;
+}
+.category-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 22px 24px;
+  min-height: 104px;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
+}
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--orange);
+}
+.category-card .c-name {
+  font-family: var(--head);
+  text-transform: uppercase;
+  line-height: 1;
+  color: var(--ink);
+}
+.category-card .c-name b { display: block; font-size: 1.7rem; font-weight: 700; letter-spacing: .5px; }
+.category-card .c-name span { display: block; font-size: 1.15rem; font-weight: 500; color: var(--muted); }
+.category-card:hover .c-name span { color: var(--orange); }
+.category-card .c-ico {
+  flex: 0 0 auto;
+  width: 64px; height: 64px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  background: var(--bg);
+  color: var(--orange);
+}
+.category-card .c-ico svg { width: 38px; height: 38px; }
+
+/* =========================================================
+   Home — parallax bands
+   ========================================================= */
+.band {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #fff;
+}
+.band.engine { background-image: url("assets/divider-engine.jpg"); min-height: 220px; }
+.band.trucks { background-image: url("assets/band-trucks.jpg"); min-height: 320px; }
+.band::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.45); }
+.band .wrap { position: relative; z-index: 1; }
+.band h2 {
+  font-size: clamp(1.5rem, 3.4vw, 2.4rem);
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(0,0,0,.6);
+}
+.band p { margin: 10px 0 22px; color: #e3e3e3; font-size: 1.05rem; }
+.band .btn { display: inline-block; min-width: 200px; }
+
+/* =========================================================
+   Home — featured posts
+   ========================================================= */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding-bottom: 16px;
+}
+.post-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform .18s, box-shadow .18s;
+}
+.post-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.post-thumb {
+  aspect-ratio: 16 / 10;
+  background: #f5a623;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.post-thumb .coming {
+  border: 4px solid #fff;
+  padding: 14px 22px;
+  transform: rotate(-3deg);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.post-thumb .coming span {
+  font-family: var(--head);
+  font-weight: 700;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  line-height: .95;
+  color: #1c1c1c;
+  text-transform: uppercase;
+  text-align: left;
+}
+.post-thumb .coming svg { width: 34px; height: 34px; color: #1c1c1c; }
+.post-body { padding: 16px 18px 20px; }
+.post-body h3 {
+  font-family: var(--body);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.post-meta { display: flex; align-items: center; justify-content: space-between; }
+.post-meta .news {
+  background: var(--orange);
+  color: #fff;
+  font-family: var(--head);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: .76rem;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+.post-meta .date { color: var(--muted); font-size: .82rem; }
+.view-more {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6px 0 56px;
+}
+.view-more a {
+  font-family: var(--head);
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  color: var(--orange);
+  font-size: 1rem;
+}
+.view-more a:hover { color: var(--orange-dark); }
+
+/* Featured products on home: 4-up */
+.product-grid.home { grid-template-columns: repeat(4, 1fr); padding-bottom: 56px; }
+
+/* =========================================================
    Responsive
    ========================================================= */
 @media (max-width: 980px) {
   .shop { grid-template-columns: 1fr; }
   .sidebar { order: 2; }
-  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid, .product-grid.home { grid-template-columns: repeat(2, 1fr); }
+  .category-grid, .post-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .main-nav { display: none; }
   .nav-toggle { display: block; margin-left: auto; }
   .brands-strip .logos { margin-left: 0; }
 }
 @media (max-width: 560px) {
-  .product-grid { grid-template-columns: 1fr; }
+  .product-grid, .product-grid.home { grid-template-columns: 1fr; }
+  .category-grid, .post-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-cats { columns: 2; }
   .topbar .tb-right { display: none; }
